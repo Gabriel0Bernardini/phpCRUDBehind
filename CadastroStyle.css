@@ -1,0 +1,133 @@
+body{
+    text-align: center;
+    background-image: url(Images/Bush1.png);
+    background-repeat: repeat;
+    
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.div1{
+    background-image: url(Images/woodenTexture.jpg);
+    width: 40%;
+    height: 50%;
+    background-repeat: no-repeat;
+    
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(51, 35, 26);
+    border-radius: 40px;
+    box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
+
+    text-align: center;
+}
+
+.p1{
+    margin-bottom: 20px;
+
+    font-family: 'Upheaval';
+    font-size: 35px;
+    color: rgb(43, 20, 14);
+
+    text-decoration: underline;
+
+    margin-top: 1.9%;
+}
+
+.p2{
+    margin-top:4%;
+    font-family: 'Upheaval';
+    font-size: 15px;
+    color: rgb(43, 20, 14);
+}
+
+.input1{
+   
+    margin-bottom: 3px;
+
+    background-color: rgba(52, 145, 52, 0.8);
+ 
+    font-family: 'Dogica';
+    font-size: 20px;
+    width: 80%;
+    
+    border-width: 3px;
+    border-style: solid; 
+    border-color: rgb(51, 35, 26); 
+}
+
+.form1{
+    
+    color: rgb(43, 20, 14);
+
+    margin-bottom: 3px;
+
+    font-family: 'Upheaval';
+    font-size: 20px;
+}
+
+.BotaoCadastrar{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    font-family: 'Upheaval';
+    font-size: 25px;
+    
+    color: rgb(19, 202, 19);
+    text-decoration: none;
+
+    background-color: rgb(43, 15, 14);
+
+    width: 30%;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    margin-left: -85%;
+    margin-top: 1.6%;
+    
+}
+
+.BotaoHome{
+     
+    text-align: center;
+
+    background: transparent 0 0 no-repeat;
+
+    font-family: 'Upheaval';
+    font-size: 25px;
+    
+
+    height: 50px;
+    width: 12%;
+    margin-right: 86%;
+
+}
+
+@font-face{
+    font-family: 'Upheaval';
+    src: url('Fonts/upheavtt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Dogica';
+    src:url('Fonts/TTF/dogica.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face{
+    font-family: 'DogicaBold';
+    src:url('Fonts/TTF/dogicabold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+

@@ -12,9 +12,7 @@
     <a href="index.php" style="background-color: black; ">
     <img src="Images/WoodenSign.png" style="height: 100px;">
     </a></p>
-    <style>
-        
-    </style>
+   
     <div class = "container1">
         <div class="div1">
             <p class="p1" >Cadastro</p>

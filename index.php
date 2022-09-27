@@ -8,12 +8,15 @@
     <link href="Indexstyle.css" rel="stylesheet">
     <link href="IndexImgStyle.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-        <div class="container">
+<body>  
+            
+    <div class="container">
         <div class="div1">
             <h1>Behind the Bushes</h1>
         </div>
+        
     </div>
+    
 
     <div class="slide-container1">
         <span id="slider-image-1"></span>

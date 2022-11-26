@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Behind The Bushes</title>
-    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
     <p style="margin-left:-86%">

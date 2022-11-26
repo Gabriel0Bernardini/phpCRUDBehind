@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Behind The Bushes</title>
-    <link rel="stylesheet" href="CadastroStyle.css">
+    <link rel="stylesheet" href="cadastroStyle.css">
 </head>
 <body>
     <p style="margin-left:-86%">

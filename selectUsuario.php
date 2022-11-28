@@ -50,7 +50,12 @@
                 <td><?php echo $exibir["TipoUsuario"]?></td>
                 <td><?php echo $exibir["HighScore"]?></td>
                 <td><a href="#">Editar</a></td>
-                <td><a href="#">Excluir</a></td>
+                <td>
+                    <a href="#" onclick="confirmarExclusao(
+                    '<?php echo $exibir["Id"] ?>',
+                    '<?php echo $exibir["NomeUsuario"] ?>',
+                    '<?php echo $exibir["SobrenomeUsuario"]?>')">Excluir</a>
+                </td>
             </tr>
         
         <?php
@@ -65,4 +70,11 @@
         ?>
 
 </body>
+<script>
+    function confirmarExclusao(id, nome, sobrenome){
+        if(window.confirm("Deseja realmente excluir o Usuário:\n"+id+" -  "+nome+""+ sobrenome)){
+            window.location = "excluirUsuario.php?Id="+id;
+        }   
+    }
+</script>
 </html>

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Usuários</title>
-    <link rel="stylesheet" href="selectStyle.css">    
+    <link rel="stylesheet" href="selectStyle.css">   
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 </head>
 <?php
     include_once("conexao.php")
@@ -21,8 +23,8 @@
 
         if($dadosUsuario->num_rows > 0){
             ?>
-        <table>
-            <tr>
+        <table class="table table-dark">
+            <tr class="table-active"> 
                 <th>Id</th>
                 <th>Nickname</th>
                 <th>Nome</th>
@@ -33,16 +35,34 @@
                 <th>Editar</th>
                 <th>Excluir</th>
             </tr>
+        
+
+        <?php
+        while($exibir = $dadosUsuario->fetch_assoc()){
+        ?>
+        
+            <tr>
+                <td><?php echo $exibir["Id"]?></td>
+                <td><?php echo $exibir["NickUsuario"]?></td>
+                <td><?php echo $exibir["NomeUsuario"]?></td>
+                <td><?php echo $exibir["SobrenomeUsuario"]?></td>
+                <td><?php echo $exibir["EmailUsuario"]?></td>
+                <td><?php echo $exibir["TipoUsuario"]?></td>
+                <td><?php echo $exibir["HighScore"]?></td>
+                <td><a href="#">Editar</a></td>
+                <td><a href="#">Excluir</a></td>
+            </tr>
+        
+        <?php
+                }
+        ?>
+
         </table>
 
-    <?php
-    while($exibir = $dadosUsuario->fetch_assoc()){
+        <?php
         
-    }
+            }
+        ?>
 
-    }
-
-
-    ?>
 </body>
 </html>

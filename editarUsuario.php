@@ -58,7 +58,7 @@
     <div class = "container1">
         <div class="div1">
             <p class="p1" >Editar</p>
-            <form class="form1" action="editarPessoa.php?Id=<?php echo $_GET['Id'] ?>" method="post">
+            <form class="form1" action="editarUsuario.php?Id=<?php echo $_GET['Id'] ?>" method="post">
                 <label for="txtNome" >Primeiro nome:</label><br>
                 <input type="text" id="txtNome" name="txtNome" class="input1"  value="<?php echo $usuario["NomeUsuario"]?>" style="margin-top: 3px;font-family:'DogicaBold';" required><br>
                 

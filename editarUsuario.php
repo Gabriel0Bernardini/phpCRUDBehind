@@ -1,39 +1,56 @@
+<?php
+    include_once"conexao.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Behind The Bushes</title>
+    <title>Editar Usuario</title>
     <link rel="stylesheet" href="cadastroStyle.css">
 </head>
 <body>
+    
     <p style="margin-left:-86%">
     <a href="index.php" style="background-color: black; ">
     <img src="Images/WoodenSign.png" style="height: 100px;">
     </a></p>
+
+    <?php
+        if(isset($_GET["Id"])){
+            $Id = $_GET["Id"];
+            $sql = "SELECT * FROM tbusuario WHERE Id = $Id";
+            $consuta = $conn->query($sql);
+            $usuario = $consulta ->fetch_assoc();            
+        }
+    ?>
+
+
+
    
     <div class = "container1">
         <div class="div1">
-            <p class="p1" >Cadastro</p>
+            <p class="p1" >Editar</p>
             <form class="form1" action="insert.php" method="post">
                 <label for="txtNome" >Primeiro nome:</label><br>
-                <input type="text" id="txtNome" name="txtNome" class="input1" required placeholder ="Digite o nome" style="margin-top: 3px;font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtNome" name="txtNome" class="input1" required value="<?php echo $usuario["NomeUsuario"]?>" style="margin-top: 3px;font-family:'DogicaBold';" required><br>
                 
                 <label for="txtSobrenome" >Sobrenome:</label><br>
-                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" required placeholder ="Digite o sobrenome" style="font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" required style="font-family:'DogicaBold';" required><br>
 
                 <label for="txtNick">Nickname:</label><br>
-                <input type="text" id="txtNick" name="txtNick" class="input1" required placeholder ="Digite o nick" style="font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtNick" name="txtNick" class="input1" required style="font-family:'DogicaBold';" required><br>
 
                 <label for="txtEmail">E-mail:</label><br>
-                <input type="text" id="txtEmail" name="txtEmail" class="input1" required placeholder ="Digite o e-mail" style="font-family:'DogicaBold';"><br>
+                <input type="text" id="txtEmail" name="txtEmail" class="input1" required style="font-family:'DogicaBold';"><br>
 
                 <label for="txtSenha">Senha:</label><br>
-                <input type="password" id="txtSenha" name="txtSenha" class="input1" required placeholder ="Digite a senha" style="font-family:'DogicaBold';"><br>
+                <input type="password" id="txtSenha" name="txtSenha" class="input1" required style="font-family:'DogicaBold';"><br>
 
                 <label for="ConfirmSenha"> Confirme a senha:</label><br>
-                <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1" required placeholder ="Confirme a senha" style="font-family:'DogicaBold';"><br>
+                <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1" required style="font-family:'DogicaBold';"><br>
 
                 <label for="TipoUsuario"> Selecione o tipo de usuário:</label><br>
                 <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';">ADMIN

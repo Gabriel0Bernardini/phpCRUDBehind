@@ -5,6 +5,11 @@ body{
     
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(4, 70, 4, 0.842);
+    opacity: 1; /* Firefox */
+  }
+
 .container1{
     display: flex;
     justify-content: center;
@@ -45,6 +50,11 @@ body{
     font-size: 15px;
     color: rgb(43, 20, 14);
 }
+
+input{
+    border-radius: 6px;
+}
+
 
 .input1{
    

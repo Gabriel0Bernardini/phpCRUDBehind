@@ -8,6 +8,7 @@ body{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(4, 70, 4, 0.842);
     opacity: 1; /* Firefox */
+    font-size: 17px;
   }
 
 .container1{
@@ -49,6 +50,20 @@ body{
     font-family: 'Upheaval';
     font-size: 15px;
     color: rgb(43, 20, 14);
+}
+
+
+
+input[type=text]{
+    height: 30px;
+    margin-bottom: 25px;
+    font-family:'DogicaBold';
+}
+
+input[type=password]{
+    height: 30px;
+    margin-bottom: 25px;
+    font-family:'DogicaBold';
 }
 
 input{

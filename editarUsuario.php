@@ -8,8 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Usuario</title>
-    <link rel="stylesheet" href="cadastroStyle.css">
+    <link rel="stylesheet" href="editarStyle.css">
 </head>
 <body>
     
@@ -22,45 +21,37 @@
         if(isset($_GET["Id"])){
             $Id = $_GET["Id"];
             $sql = "SELECT * FROM tbusuario WHERE Id = $Id";
-            $consuta = $conn->query($sql);
+            $consulta = $conn->query($sql);
             $usuario = $consulta ->fetch_assoc();            
         }
     ?>
 
-
-
-   
+  
     <div class = "container1">
         <div class="div1">
             <p class="p1" >Editar</p>
-            <form class="form1" action="insert.php" method="post">
+            <form class="form1" action="editarPessoa.php?Id=<?php echo $_GET['Id'] ?>" method="post">
                 <label for="txtNome" >Primeiro nome:</label><br>
-                <input type="text" id="txtNome" name="txtNome" class="input1" required value="<?php echo $usuario["NomeUsuario"]?>" style="margin-top: 3px;font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtNome" name="txtNome" class="input1"  value="<?php echo $usuario["NomeUsuario"]?>" style="margin-top: 3px;font-family:'DogicaBold';" required><br>
                 
                 <label for="txtSobrenome" >Sobrenome:</label><br>
-                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" required style="font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" value="<?php echo $usuario["SobrenomeUsuario"]?>" style="font-family:'DogicaBold';" required><br>
 
                 <label for="txtNick">Nickname:</label><br>
-                <input type="text" id="txtNick" name="txtNick" class="input1" required style="font-family:'DogicaBold';" required><br>
+                <input type="text" id="txtNick" name="txtNick" class="input1" value="<?php echo $usuario["NickUsuario"]?>" style="font-family:'DogicaBold';" required><br>
 
                 <label for="txtEmail">E-mail:</label><br>
-                <input type="text" id="txtEmail" name="txtEmail" class="input1" required style="font-family:'DogicaBold';"><br>
-
-                <label for="txtSenha">Senha:</label><br>
-                <input type="password" id="txtSenha" name="txtSenha" class="input1" required style="font-family:'DogicaBold';"><br>
-
-                <label for="ConfirmSenha"> Confirme a senha:</label><br>
-                <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1" required style="font-family:'DogicaBold';"><br>
+                <input type="text" id="txtEmail" name="txtEmail" class="input1"  value="<?php echo $usuario["EmailUsuario"]?>" style="font-family:'DogicaBold';"><br>
 
                 <label for="TipoUsuario"> Selecione o tipo de usuário:</label><br>
-                <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';">ADMIN
-                <input type="radio" name="TipoUsuario" value="COMUM" class="input1" style="font-family:'DogicaBold';">COMUM
+                <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';" <?php echo("ADMIN"==$usuario["TipoUsuario"])?"checked":"" ?>>ADMIN
+                <input type="radio" name="TipoUsuario" value="COMUM" class="input1" style="font-family:'DogicaBold';" <?php echo("COMUM"==$usuario["TipoUsuario"])?"checked":"" ?>>COMUM
 
-                <input type="submit" value="Cadastrar" nome="btnCadastrar" class="BotaoCadastrar">
+                <input type="submit" value="Editar" nome="btnCadastrar" class="BotaoCadastrar">
                 <input type="reset" value="Cancelar" nome="btnCancelar" class="BotaoCadastrar">
             </form>
 
-            <p class="p2">Se você já tem um cadastro <a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para fazer login</a></p>
+            <p class="p2">Para voltar a home do site <a href="index.php" style="color: rgb(4, 116, 4);">clique aqui</a></p>
         </div>
     </div>
 </body>

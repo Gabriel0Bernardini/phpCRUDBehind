@@ -49,7 +49,7 @@
                 <td><?php echo $exibir["EmailUsuario"]?></td>
                 <td><?php echo $exibir["TipoUsuario"]?></td>
                 <td><?php echo $exibir["HighScore"]?></td>
-                <td><a href="editarUsuario.php">Editar</a></td>
+                <td><a href="editarUsuario.php?Id=<?php echo $exibir["Id"] ?>">Editar</a></td>
                 <td>
                     <a href="#" onclick="confirmarExclusao(
                     '<?php echo $exibir["Id"] ?>',

@@ -18,22 +18,22 @@
             <p class="p1" >Cadastro</p>
             <form class="form1" action="insert.php" method="post">
                 <label for="txtNome" >Primeiro nome:</label><br>
-                <input type="text" id="txtNome" name="txtNome" class="input1" required placeholder ="Digite o nome" style="" required><br>
+                <input type="text" id="txtNome" name="txtNome" class="input1" required placeholder ="Digite o nome"><br>
                 
                 <label for="txtSobrenome" >Sobrenome:</label><br>
-                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" required placeholder ="Digite o sobrenome" style="" required><br>
+                <input type="text" id="txtSobrenome" name="txtSobrenome" class="input1" required placeholder ="Digite o sobrenome"><br>
 
                 <label for="txtNick">Nickname:</label><br>
-                <input type="text" id="txtNick" name="txtNick" class="input1" required placeholder ="Digite o nick" style="" required><br>
+                <input type="text" id="txtNick" name="txtNick" class="input1" required placeholder ="Digite o nick"><br>
 
                 <label for="txtEmail">E-mail:</label><br>
-                <input type="text" id="txtEmail" name="txtEmail" class="input1" required placeholder ="Digite o e-mail" style=""><br>
+                <input type="text" id="txtEmail" name="txtEmail" class="input1" required placeholder ="Digite o e-mail"><br>
 
                 <label for="txtSenha">Senha:</label><br>
-                <input type="password" id="txtSenha" name="txtSenha" class="input1" required placeholder ="Digite a senha" style=""><br>
+                <input type="password" id="txtSenha" name="txtSenha" class="input1" required placeholder ="Digite a senha"><br>
 
                 <label for="ConfirmSenha"> Confirme a senha:</label><br>
-                <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1" required placeholder ="Confirme a senha" style=""><br>
+                <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1" required placeholder ="Confirme a senha"><br>
 
                 <label for="TipoUsuario"> Selecione o tipo de usuário:</label><br>
                 <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';">ADMIN

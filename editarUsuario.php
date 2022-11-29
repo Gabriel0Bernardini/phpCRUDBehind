@@ -1,5 +1,33 @@
 <?php
     include_once"conexao.php";
+
+    if(isset($_POST["txtNome"])){
+        $nome = $_POST["txtNome"];
+        $sobrenome = $_POST["txtSobrenome"];
+        $nick = $_POST["txtNick"];
+        $email = $_POST["txtEmail"];
+        $tipo = $_POST["TipoUsuario"];
+
+        $sql = "UPDATE tbusuario
+                SET NomeUsuario = '".$nome."',
+                SobreNomeUsuario = '".$sobrenome."',
+                NickUsuario = '".$nick."',
+                EmailUsuario = '".$email."',
+                TipoUsuario = '".$tipo."' 
+                WHERE Id =" .$_GET["Id"];
+
+        if($conn->query($sql)==TRUE){
+            ?>
+            <script>
+                alert("Usuario atualizado com sucesso!");
+                window.location = "selectUsuario.php";
+            </script>
+            <?php
+        }else{
+            echo "Erro ao atualizar Usuário: " . $sql . "<br>" . $conn->error;
+            echo "<script>window.history.back();</script>";
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -41,13 +69,13 @@
                 <input type="text" id="txtNick" name="txtNick" class="input1" value="<?php echo $usuario["NickUsuario"]?>" style="font-family:'DogicaBold';" required><br>
 
                 <label for="txtEmail">E-mail:</label><br>
-                <input type="text" id="txtEmail" name="txtEmail" class="input1"  value="<?php echo $usuario["EmailUsuario"]?>" style="font-family:'DogicaBold';"><br>
+                <input type="text" id="txtEmail" name="txtEmail" class="input1"  value="<?php echo $usuario["EmailUsuario"]?>" style="font-family:'DogicaBold';" required><br>
 
                 <label for="TipoUsuario"> Selecione o tipo de usuário:</label><br>
                 <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';" <?php echo("ADMIN"==$usuario["TipoUsuario"])?"checked":"" ?>>ADMIN
                 <input type="radio" name="TipoUsuario" value="COMUM" class="input1" style="font-family:'DogicaBold';" <?php echo("COMUM"==$usuario["TipoUsuario"])?"checked":"" ?>>COMUM
 
-                <input type="submit" value="Editar" nome="btnCadastrar" class="BotaoCadastrar">
+                <input type="submit" value="Editar" nome="btnEditar" class="BotaoCadastrar">
                 <input type="reset" value="Cancelar" nome="btnCancelar" class="BotaoCadastrar">
             </form>
 

@@ -13,8 +13,7 @@
     <div class="container">
         <div class="div1">
             <h1>Behind the Bushes</h1>
-        </div>
-        
+        </div>        
     </div>
     
 

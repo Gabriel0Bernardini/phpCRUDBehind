@@ -17,13 +17,13 @@
 
     <?php
 
-        $sql = "SELECT * FROM tbusuario order by id";
+        $sql = "SELECT * FROM tbusuario order by Id";
 
         $dadosUsuario = $conn->query($sql);
 
         if($dadosUsuario->num_rows > 0){
             ?>
-        <table class="table table-dark">
+        <table class="table table-dark table-striped">
             <tr class="table-active"> 
                 <th>Id</th>
                 <th>Nickname</th>

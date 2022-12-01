@@ -33,6 +33,15 @@ body{
     text-align: center;
 }
 
+.tituloNav{
+    font-family: 'Daydream', Times, serif;
+    color:white;
+    margin-right:27%;
+    margin-left:23%;
+    margin-bottom:1%;
+    padding-top: 1%;
+}
+
 .p1{
     margin-bottom: 20px;
 
@@ -136,6 +145,23 @@ input{
 
 }
 
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'DogicaBold';
+    font-size: 22px;
+    margin-left: 5px;
+  }
+  
+
+
+@font-face {
+    font-family: 'Daydream';
+    src: url('Fonts/Daydream.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face{
     font-family: 'Upheaval';
     src: url('Fonts/upheavtt.ttf') format('truetype');

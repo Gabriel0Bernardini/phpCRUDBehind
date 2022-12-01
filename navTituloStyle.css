@@ -1,0 +1,29 @@
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'DogicaBold';
+    font-size: 22px;
+    margin-left: 5px;
+  }
+
+.tituloNav{
+    font-family: 'Daydream', Times, serif;
+    color:white;
+    margin-right:27%;
+    margin-left:23%;
+    margin-bottom:1%;
+    padding-top: 1%;
+}
+@font-face {
+    font-family: 'Daydream';
+    src: url('Fonts/Daydream.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'DogicaBold';
+    src:url('Fonts/TTF/dogicabold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}

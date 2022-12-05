@@ -116,7 +116,7 @@ input{
     color: rgb(19, 202, 19);
     text-decoration: none;
 
-    background-color: rgb(43, 15, 14);
+    background-color: rgb(71, 45, 36);
 
     width: 30%;
 }
@@ -128,23 +128,6 @@ input{
     margin-top: 1.6%;
     
 }
-
-.BotaoHome{
-     
-    text-align: center;
-
-    background: transparent 0 0 no-repeat;
-
-    font-family: 'Upheaval';
-    font-size: 25px;
-    
-
-    height: 50px;
-    width: 12%;
-    margin-right: 86%;
-
-}
-
 
 .link{
     text-decoration: none;

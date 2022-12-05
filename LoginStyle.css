@@ -56,6 +56,33 @@ body{
     padding-top: 1%;
 }
 
+.form1{
+    
+    color: rgb(43, 20, 14);
+
+    margin-bottom: 3px;
+
+    font-family: 'Upheaval';
+    font-size: 20px;
+}
+
+.BotaoCadastrar{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    font-family: 'Upheaval';
+    font-size: 25px;
+    
+    color: rgb(19, 202, 19);
+    text-decoration: none;
+
+    background-color: rgb(43, 15, 14);
+
+    width: 30%;
+
+}
+
 
 @font-face {
     font-family: 'Daydream';

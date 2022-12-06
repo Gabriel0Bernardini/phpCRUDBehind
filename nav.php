@@ -11,7 +11,7 @@
     <a href="index.php" class="link">Home</a> 
     <a href="cadastro.php" class="link">Cadastro</a>
     <a href="login.php" class="link">Login</a>
-    <a href="selectUsuario.php" class="link">Usuarios Cadastrados</a>
+    <a href="selectUsuario.php" class="link">Usuários</a>
   </div> 
 </div>
 </nav>

@@ -29,8 +29,8 @@
                 <label for="txtSenha">Senha:</label><br>
                 <input type="password" id="txtSenha" name="txtSenha" class="input1"  placeholder ="Digite a senha" required><br>
 
-                <input type="submit" value="Logar" nome="btnCadastrar" class="BotaoCadastrar">
-                <input type="reset" value="Cancelar" nome="btnCancelar" class="BotaoCadastrar">
+                <input type="submit" value="Logar" nome="btnCadastrar" class="Botao">
+                <input type="reset" value="Cancelar" nome="btnCancelar" class="Botao">
             </form>
 
             <p class="p2">Se você ainda não tem um cadastro <a href="cadastro.php" style="color: rgb(4, 116, 4);;">clique aqui para se cadastrar</a></p>

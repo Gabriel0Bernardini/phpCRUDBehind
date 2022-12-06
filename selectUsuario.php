@@ -36,6 +36,7 @@
                 <th>Nome</th>
                 <th>Sobrenome</th>
                 <th>E-mail</th>
+                <th>Senha</th>
                 <th>Tipo de Usuário</th>
                 <th>Highscore</th>
                 <th>Editar</th>
@@ -53,6 +54,7 @@
                 <td><?php echo $exibir["NomeUsuario"]?></td>
                 <td><?php echo $exibir["SobrenomeUsuario"]?></td>
                 <td><?php echo $exibir["EmailUsuario"]?></td>
+                <td><?php echo $exibir["SenhaUsuario"]?></td>
                 <td><?php echo $exibir["TipoUsuario"]?></td>
                 <td><?php echo $exibir["HighScore"]?></td>
                 <td><a href="editarUsuario.php?Id=<?php echo $exibir["Id"] ?>">Editar</a></td>

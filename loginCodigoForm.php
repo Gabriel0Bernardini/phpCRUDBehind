@@ -16,10 +16,12 @@
     if($resultado->num_rows > 0){
         $dados_usuario = $resultado->fetch_assoc();
 
-        $_SESSION["usuario"] = $dados_usuario["EmailUsuario"];
+        $_SESSION["email"] = $dados_usuario["EmailUsuario"];
         $_SESSION["nick"] = $dados_usuario["NickUsuario"];
         $_SESSION["tipo"] = $dados_usuario["TipoUsuario"];
-        header("location: selectUsuario.php");
+        
+        echo "<script>alert('Usuário ".$_SESSION["nick"]." logado com sucesso!');</script>";
+        echo "<script>window.location = 'index.php';</script>";
     }else{
         echo "Erro: " . $sql . "<br>" . $conn->error;
         echo "<script>window.history.back();</script>";

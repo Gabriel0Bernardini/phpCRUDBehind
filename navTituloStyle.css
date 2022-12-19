@@ -14,13 +14,15 @@
 
   }
 
+.containerTituloNav{
+  margin-right:42.4%;
+  margin-left:10%;
+}
+
 .tituloNav{
-    font-family: 'Daydream', Times, serif;
-    color:white;
-    margin-right:29.5%;
-    margin-left:20%;
-    margin-bottom:1%;
-    padding-top: 1%;
+    height: 170px;
+    width: 355px;
+    
 }
 @font-face {
     font-family: 'Daydream';

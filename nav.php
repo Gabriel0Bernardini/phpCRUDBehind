@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="navTituloStyle.css">
 <nav class="navbar"  style="background: rgb(4, 64, 3);">
   <div class="container-fluid" style="justify-content:right ;">
     <h1 class="tituloNav">Behind The Bushes</h1>

@@ -3,3 +3,7 @@ table,th,td{
     border-collapse: collapse;
 }
 
+body{
+    background-image:url(Images/Bush1.png);
+    background-repeat: repeat;
+}

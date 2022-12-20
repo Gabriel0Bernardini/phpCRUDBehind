@@ -19,7 +19,7 @@
 <?php
     require_once("nav.php");
 ?>
-    <h1>Lista de Usuários cadastrados</h1>
+    <h1 style="margin-top: 5%;">Lista de Usuários cadastrados</h1>
 
     <?php
 

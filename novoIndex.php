@@ -16,13 +16,33 @@
     require_once("nav.php");
 ?>
 <br>    
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
+<div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 2%;
+    border-radius: 50px; 
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgb(1, 19, 5);
+    box-shadow: 5px 10px 30px 10px rgb(0, 17, 4), 5px 10px 30px 10px rgb(2, 63, 16);">
+  <div class="carousel-inner" style="border-radius: 45px;">
     <div class="carousel-item active">
-      <img src="Images/Slide1Redimencionado2.jpg" class="d-block w-100 active" alt="Slide do Jogo 1">
+      <img src="Images/Slide1.jpeg" class="d-block w-100 active" alt="Slide do Jogo 1" >
     </div>
     <div class="carousel-item">
-      <img src="Images/Slide2Redimencionado2.jpg" class="d-block w-100" alt="Slide do Jogo 2">
+      <img src="Images/Slide2.jpeg" class="d-block w-100" alt="Slide do Jogo 2">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Slide3.jpeg" class="d-block w-100" alt="Slide do Jogo 3">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Slide4.jpeg" class="d-block w-100" alt="Slide do Jogo 4">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Slide5.jpeg" class="d-block w-100" alt="Slide do Jogo 5">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Slide6.jpeg" class="d-block w-100" alt="Slide do Jogo 6">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/Slide7.jpeg" class="d-block w-100" alt="Slide do Jogo 7">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

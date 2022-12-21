@@ -1,0 +1,68 @@
+.logoimg{
+     height: 160px;
+     width: 340px;        
+}
+
+.cabecalho{
+        margin-right: -0.5%;
+        margin-left: -0.5%;
+        margin-top: -0.5%;
+        height:160px; 
+        background: rgb(4, 64, 3);
+}
+
+header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        position: fixed;
+        top: 0%;
+        font-size: 20px;
+        padding: 15px 50px ;
+}
+
+.headerUL{
+        cursor: default;
+        word-spacing: 20px;
+        padding-right: 5%;
+       
+    }
+
+.headerLI{
+     display: inline-block; 
+}
+
+.link{
+        text-decoration: none;
+        color: white;
+        font-family: 'DogicaBold';
+        font-size: 20px;
+        margin-right:7px;       
+      }
+    
+.aNavLink:hover{
+        background-image: url(Images/woodenTexture.jpg);
+        color: black;
+        border-radius: 9px;
+        padding: 6px;  
+}
+
+.icones{
+       color:aliceblue
+}
+
+@font-face {
+        font-family: 'Daydream';
+        src: url('Fonts/Daydream.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+    
+@font-face{
+        font-family: 'DogicaBold';
+        src:url('Fonts/TTF/dogicabold.ttf');
+        font-weight: normal;
+        font-size: normal;
+}
+    

@@ -13,10 +13,10 @@
 </head>
 <body>
 <?php
-    require_once("nav.php");
+    include("Header.php");
 ?>
 <br>    
-<div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 2%;
+<div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 9%;
     border-radius: 50px; 
     border-style: solid;
     border-width: 5px; 

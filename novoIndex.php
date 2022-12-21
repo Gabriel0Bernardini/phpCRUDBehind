@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    include("Header.php");
+    include("header.php");
 ?>
 <br>    
 <div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 9%;

@@ -1,13 +1,17 @@
+*{
+       
+        margin: 0;
+        padding: 0;  
+}
 .logoimg{
      height: 160px;
      width: 340px;        
 }
 
 .cabecalho{
-        margin-right: -0.5%;
-        margin-left: -0.5%;
-        margin-top: -0.5%;
-        height:160px; 
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height:170px; 
         background: rgb(4, 64, 3);
 }
 

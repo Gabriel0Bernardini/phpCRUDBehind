@@ -1,5 +1,5 @@
 
-<link href="HeaderStyle.css" rel="Stylesheet">
+<link href="headerStyle.css" rel="Stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
@@ -13,4 +13,4 @@
       <li class="headerLI"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x icones aNavLink"></i></a></li>
       <li class="headerLI"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2x icones aNavLink"></i></a></li>
     </ul>
-  </header>
+</header>

@@ -69,5 +69,7 @@
       </p>
     </div>
   </div>
+
+ <button type="button" onclick="location.href='login.php'"class="botaoDownload">DOWNLOAD</button> 
 </body>
 </html>

@@ -13,7 +13,7 @@
 </head>
 <body>   
 <?php
-    require_once("nav.php");
+    require_once("Header.php");
 ?>
 
     <div class = "container1">

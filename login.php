@@ -15,10 +15,10 @@
 <body>
 
 <?php
-    require_once("nav.php");
+    require_once("Header.php");
 ?>
 
-    <div class = "container1" style="margin-top:6%">
+    <div class = "container1" >
         <div class="div1" >
             <p class="p1" >Login</p>
             <form class="form1" action="loginCodigoForm.php" method="post">

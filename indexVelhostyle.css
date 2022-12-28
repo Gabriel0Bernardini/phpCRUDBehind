@@ -1,0 +1,147 @@
+body{
+    text-align: center;
+    background-image: url(Images/Bush1.png);
+    background-repeat: repeat;
+    
+}
+
+
+h1{
+    padding-top: 100px;
+    font-family: 'Daydream', Times, serif;
+    font-size: 3em;
+    color: rgb(41, 24, 2);
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    float: left;
+
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+}
+
+.div1{
+    position: inherit;
+    background-image: url(Images/WoodenSign1.png);
+    width: 1200px;
+    height: 892px;
+    background-repeat: no-repeat;
+    
+}
+
+.div2{
+    background-image: url(Images/woodenTexture.jpg);
+    width: 800px;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-top: -30%;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(51, 35, 26);
+    border-radius: 50px;
+    box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
+
+    text-align: center;
+}
+
+.div3{
+    background: transparent url(Images/enemyBush.png) 0 0 no-repeat;
+    width: 433px;
+    height: 429px;
+    justify-content: center;
+}
+
+.div4{
+    position: inherit;
+}
+
+.botao1{
+    background: transparent url(Images/spritesheet2.png) 0 0 no-repeat;
+
+    font-family: 'Daydream', Times serif;
+    color: black;
+    font-size: 24px;
+    transition: color 1s
+    ease-out 50ms;
+
+    margin-top: 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 320px;
+    width: 286px;
+    margin-left: -6%;
+
+    padding-right: 6%;
+    
+
+}
+
+
+@keyframes run {
+   
+    100%{
+        padding-left: 3.5%;
+        padding-bottom: 7%;
+        background-position:-1160px, 0px;
+    }
+    
+}
+.botao1:hover{
+    color: yellow;
+    animation : run 1s steps(4) infinite;
+    
+}
+
+.pBotao{
+    font-family: 'Daydream',Times,serif;
+    color: black; 
+    font-size: 25px;
+    justify-self: center;
+    transition: color 1s
+    ease-out 50ms
+    
+}
+.pBotao:hover{
+    color: yellow;
+}
+
+.p1{
+    font-family: 'Upheaval';
+    font-size: 35px;
+    color: rgb(43, 25, 14);
+
+    margin-top: 1.9%;
+}
+
+
+
+
+/*Import de fontes */
+@font-face {
+    font-family: 'Daydream';
+    src: url('Fonts/Daydream.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Upheaval';
+    src: url('Fonts/upheavtt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

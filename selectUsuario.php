@@ -18,9 +18,9 @@
 <body>
 
 <?php
-    require_once("nav.php");
+    require_once("Header.php");
 ?>
-    <h1 style="margin-top: 5%;">Lista de Usuários cadastrados</h1>
+    <h1 style="margin-top: 12%;">Lista de Usuários cadastrados</h1>
 
     <?php
 

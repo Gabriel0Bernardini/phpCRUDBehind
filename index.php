@@ -21,7 +21,8 @@
     border-style: solid;
     border-width: 5px; 
     border-color: rgb(1, 19, 5);
-    box-shadow: 5px 10px 30px 10px rgb(0, 17, 4), 5px 10px 30px 10px rgb(2, 63, 16);">
+    box-shadow: 5px 10px 30px 10px rgb(0, 17, 4), 5px 10px 30px 10px rgb(2, 63, 16);
+    display:inline-block;">
   <div class="carousel-inner" style="border-radius: 45px;">
     <div class="carousel-item active">
       <img src="Images/Slide1.jpeg" class="d-block w-100 active" alt="Slide do Jogo 1" >

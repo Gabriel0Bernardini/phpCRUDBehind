@@ -58,7 +58,7 @@ body{
     border-style: solid;
     border-width: 3px;
     border-color: rgb(51, 35, 26);
-    border-radius: 2    0px;
+    border-radius: 18px;
     box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
 
     text-align: center;

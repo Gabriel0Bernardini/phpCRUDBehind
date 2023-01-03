@@ -30,7 +30,7 @@ header{
 .headerUL{
         cursor: default;
         word-spacing: 20px;
-        padding-right: 5%;
+        padding-right: 4%;
        
     }
 
@@ -55,6 +55,14 @@ header{
 
 .icones{
        color:aliceblue
+}
+
+.MensagemUsuario{
+        font-size:19px;
+        padding-top:2%;
+        text-decoration: none;
+        color: white;
+        font-family: 'Daydream';
 }
 
 @font-face {

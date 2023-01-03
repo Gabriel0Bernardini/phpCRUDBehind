@@ -21,7 +21,7 @@
     <div class = "container1" >
         <div class="div1" >
             <p class="p1" >Login</p>
-            <form class="form1" action="loginCodigoForm.php" method="post">
+            <form class="form1" id="formLogin" action="loginCodigoForm.php" method="post">
                 <label for="txtEmail">E-mail:</label><br>
                 <input type="text" id="txtEmail" name="txtEmail" class="input1"  placeholder ="Digite o e-mail" required><br>
 

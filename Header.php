@@ -1,10 +1,17 @@
+<?php
+  require_once("conexao.php");
+  session_start();
+
+  
+?>
+
 
 <link href="headerStyle.css" rel="Stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
 <header class="cabecalho"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
-  <p class="MensagemUsuario">Bem vindo, Usuario!</p>
+  <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!</p>
   
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>

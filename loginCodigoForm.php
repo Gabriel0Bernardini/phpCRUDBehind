@@ -23,7 +23,8 @@
         echo "<script>alert('Usuário ".$_SESSION["nick"]." logado com sucesso!');</script>";
         echo "<script>window.location = 'index.php';</script>";
     }else{
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        /*echo "Erro: " . $sql . "<br>" . $conn->error;*/
+        echo "<script>alert('Usuário ou senha incorretos ou não registrados');</script>";
         echo "<script>window.history.back();</script>";
     }
 ?>

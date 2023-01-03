@@ -5,10 +5,6 @@
   
 ?>
 
-<?php
-    require_once("conexao.php")
-?>
-
 <!DOCTYPE html>
 <html lang= "pt-br">
 <head>
@@ -23,8 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-
 <?php
+if(isset($_SESSION["email"])){
+
     require_once("Header.php");
 ?>
     <h1 style="margin-top: 12%;">Lista de Usuários cadastrados</h1>
@@ -83,6 +80,10 @@
         <?php
         
             }
+
+        }else{
+            require_once("PaginaUsuarioNaoLogado.php");
+        }
         ?>
 
 </body>

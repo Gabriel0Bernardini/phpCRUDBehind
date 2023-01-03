@@ -1,4 +1,12 @@
 <?php
+  require_once("conexao.php");
+  session_start();
+
+  
+?>
+
+
+<?php
     include_once"conexao.php";
 
     if(isset($_POST["txtNome"])){

@@ -1,4 +1,12 @@
 <?php
+  require_once("conexao.php");
+  session_start();
+
+  
+?>
+
+
+<?php
     include 'conexao.php';
     $nome = $_POST["txtNome"];
     $sobrenome = $_POST["txtSobrenome"];

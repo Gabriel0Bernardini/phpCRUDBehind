@@ -1,3 +1,10 @@
+<?php
+  require_once("conexao.php");
+  session_start();
+
+  
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

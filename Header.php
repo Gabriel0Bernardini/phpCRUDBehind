@@ -22,7 +22,7 @@
     <li class="headerLI"><a href="cadastro.php" class="link aNavLink">Cadastro</a></li>
     <li class="headerLI"><a href="login.php" class="link aNavLink">Login</a></li>
     <?php 
-      if((isset($_SESSION["email"])) &&($_SESSION["tipo"]==="ADMIN") ){
+      if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN") ){
         
     ?>
       <li class="headerLI"><a href="selectUsuario.php" class="link aNavLink">Usuários</a></li>

@@ -77,6 +77,6 @@
     </div>
   </div>
 
- <button type="button" onclick="location.href='login.php'"class="botaoDownload">DOWNLOAD</button> 
+ <button type="button" onclick="location.href='download.php?file=BehindTheBushes_20221206_v11.rar'"class="botaoDownload">DOWNLOAD</button> 
 </body>
 </html>

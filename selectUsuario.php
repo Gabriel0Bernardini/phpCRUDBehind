@@ -20,8 +20,8 @@
 </head>
 <body>
 <?php
-if(isset($_SESSION["email"])){
-
+if(isset($_SESSION["email"]) ){
+    if($_SESSION["tipo"]==="ADMIN"){
     require_once("Header.php");
 ?>
     <h1 style="margin-top: 12%;">Lista de Usuários cadastrados</h1>
@@ -80,6 +80,9 @@ if(isset($_SESSION["email"])){
         <?php
         
             }
+        }else{
+            require_once("PaginaUsuarioNaoPermitido.php");
+        }
 
         }else{
             require_once("PaginaUsuarioNaoLogado.php");

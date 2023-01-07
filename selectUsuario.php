@@ -62,12 +62,12 @@ if(isset($_SESSION["email"])){
                 <td><?php echo $exibir["SenhaUsuario"]?></td>
                 <td><?php echo $exibir["TipoUsuario"]?></td>
                 <td><?php echo $exibir["HighScore"]?></td>
-                <td style="text-align: center;padding-right: 50px;"><a href="editarUsuario.php?Id=<?php echo $exibir["Id"] ?>"><i class="fa-solid fa-trash-can" style="color: white;"></i></a></td>
+                <td style="text-align: center;padding-right: 50px;"><a href="editarUsuario.php?Id=<?php echo $exibir["Id"] ?>"><i class="fa-solid fa-user-pen" style="color: white;"></i></a></td>
                 <td style="text-align: center; padding-right: 50px;">
                     <a href="#" onclick="confirmarExclusao(
                     '<?php echo $exibir["Id"] ?>',
                     '<?php echo $exibir["NomeUsuario"] ?>',
-                    '<?php echo $exibir["SobrenomeUsuario"]?>')"><i class="fa-solid fa-user-pen" style="color:white"></i></a>
+                    '<?php echo $exibir["SobrenomeUsuario"]?>')"><i class="fa-solid fa-trash-can" style="color:white"></i></a>
                 </td>
             </tr>
         

@@ -54,7 +54,7 @@
 <body>
     
     <?php
-        require_once("nav.php");
+        require_once("Header.php");
     ?>
 
 
@@ -68,7 +68,7 @@
     ?>
 
   
-    <div class = "container1" style="margin-top:5%; margin-bottom:6%;">
+    <div class = "container1">
         <div class="div1" >
             <p class="p1" >Editar</p>
             <form class="form1" action="editarUsuario.php?Id=<?php echo $_GET['Id'] ?>" method="post">

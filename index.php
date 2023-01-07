@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovoIndex</title>
+    <title>Home</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -77,6 +77,10 @@
     </div>
   </div>
 
- <button type="button" onclick="location.href='download.php?file=BehindTheBushes_20221206_v11.rar'"class="botaoDownload">DOWNLOAD</button> 
+ <button type="button" class="botaoDownload" <?php  
+    if(isset($_SESSION["email"]) ){?>
+      onclick="location.href='download.php?file=BehindTheBushes_20221206_v11.rar'"
+    <?php }else{?> onclick="location.href='PaginaUsuarioNaoDownload.php'" <?php }?> 
+    >DOWNLOAD</button> 
 </body>
 </html>

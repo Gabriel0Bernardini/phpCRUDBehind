@@ -11,19 +11,23 @@
 
 
 <header class="cabecalho"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
-  <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!</p>
+<?php 
+  if(isset($_SESSION["email"]) ){?>
+  <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!<br><br> Tipo de Usuario: <?php echo $_SESSION["tipo"]?></p>
   
   <a href="logout.php" title="logout"> Sair</a>  
-
+<?php } ?>
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>
     <li class="headerLI"><a href="cadastro.php" class="link aNavLink">Cadastro</a></li>
     <li class="headerLI"><a href="login.php" class="link aNavLink">Login</a></li>
     <?php 
-      if($_SESSION["tipo"] ==="ADMIN"){
+      if((isset($_SESSION["email"])) &&($_SESSION["tipo"]==="ADMIN") ){
+        
     ?>
       <li class="headerLI"><a href="selectUsuario.php" class="link aNavLink">Usuários</a></li>
     <?php 
+      
     }
     ?>
     <li class="headerLI"><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2x icones aNavLink"></i></a></li>

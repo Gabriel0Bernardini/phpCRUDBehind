@@ -11,7 +11,9 @@
     <div class = "container1">
         <div class="div1">
             <p class="p1">Usuario não conectado!</p>
-            <p class="p2">Para realizar o login por favor <br><a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para se conectar</a></p>
+            <p class="p2">Ou</p>
+            <p class="p2">sem as permissões necessarias para acessar essa página</p>
+            <p class="p3">Para realizar o login por favor <br><a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para se conectar</a></p>
         </div>
     </div>
 </body>

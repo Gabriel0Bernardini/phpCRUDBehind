@@ -53,6 +53,18 @@ header{
         padding: 6px;  
 }
 
+.aNavLink1{
+        background: none;
+        border: none;
+}
+
+.aNavLink1:hover{
+        background-image: url(Images/woodenTexture.jpg);
+        color: red;
+        border-radius: 11px;
+        padding: 2px;  
+}
+
 .icones{
        color:aliceblue
 }

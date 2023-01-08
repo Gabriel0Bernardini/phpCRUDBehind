@@ -25,7 +25,7 @@
     <?php
       }else{ 
     ?>
-    <li class="headerLI"><a href="logout.php" class="link aNavLink">Logout</a></li>
+    <li class="headerLI"><button onclick="goBack()" class="link aNavLink1">Logout</button></li>
     <?php 
       }
       if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
@@ -41,3 +41,11 @@
   </ul>
   
 </header>
+<script>
+  function goBack() {
+  var confirmation = confirm("Voce tem certeza que deseja deslogar?");
+  if (confirmation === true) {
+    window.open("logout.php");
+  }
+}
+</script>

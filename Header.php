@@ -25,7 +25,7 @@
     <?php
       }else{ 
     ?>
-    <li class="headerLI"><button onclick="goBack()" class="link aNavLink1">Logout</button></li>
+    <li class="headerLI"><a onclick="goBack()" class="link aNavLink1">Logout</a></li>
     <?php 
       }
       if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){

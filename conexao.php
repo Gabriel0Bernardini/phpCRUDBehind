@@ -1,5 +1,5 @@
 <?php
-    define('HOST', 'localhost:3307');//define o nome do servidor
+    define('HOST', 'localhost');//define o nome do servidor
     define('USER', 'root');; //nome do usuário
     define('PASSWORD', ''); //define a senha de acesso ao BD
     define('DB', 'bdBehind'); //define o nome do Banco de Dados

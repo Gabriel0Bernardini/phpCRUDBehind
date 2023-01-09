@@ -79,7 +79,7 @@
 
  <button type="button" class="botaoDownload" <?php  
     if(isset($_SESSION["email"]) ){?>
-      onclick="location.href='download.php?file=BehindTheBushes_20221206_v11.rar'"
+      onclick="location.href='./DownloadFiles/BehindTheBushes_20221206_v11.zip'"
     <?php }else{?> onclick="location.href='PaginaUsuarioNaoDownload.php'" <?php }?> 
     >DOWNLOAD</button> 
 </body>

@@ -17,7 +17,14 @@
 <?php } ?>
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>
-    <li class="headerLI"><a href="cadastro.php" class="link aNavLink">Cadastro</a></li>
+    <li class="headerLI"><a <?php if(!(isset($_SESSION["email"]))){ ?>
+            href="cadastroUsuarioComum.php" <?php } else{
+              if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
+                ?>href="cadastro.php"<?php
+                }
+                }
+                ?>
+          class="link aNavLink">Cadastro</a></li>
     <?php
       if(!(isset($_SESSION["email"]))){
     ?>

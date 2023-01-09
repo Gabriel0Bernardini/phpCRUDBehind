@@ -13,13 +13,15 @@
     $nick = $_POST["txtNick"];
     $email = $_POST["txtEmail"];
     $senha = $_POST["txtSenha"];
-    $tipo = $_POST["TipoUsuario"];
 
     $sql = "INSERT INTO tbusuario (NomeUsuario, SobrenomeUsuario, NickUsuario, EmailUsuario, SenhaUsuario, TipoUsuario)
-    VALUES ('" . $nome . "', '" . $sobrenome . "','" . $nick . "','" .$email ."','" . $senha . "','" . $tipo . "')";
+    VALUES ('" . $nome . "', '" . $sobrenome . "','" . $nick . "','" .$email ."','" . $senha . "','COMUM')";
     
     if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('Usuário inserido com sucesso!');</script>";
+        //echo "<script>alert('Usuário cadastrado com sucesso!');</script>";
+        $_SESSION["email"] = $email;
+        $_SESSION["nick"] = $nick;
+        $_SESSION["tipo"] = "COMUM";
         echo "<script>window.location = 'index.php';</script>";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;

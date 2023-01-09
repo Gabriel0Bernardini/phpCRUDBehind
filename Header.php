@@ -52,7 +52,7 @@
   function goBack() {
   var confirmation = confirm("Voce tem certeza que deseja deslogar?");
   if (confirmation === true) {
-    window.open("logout.php");
+    window.location = "logout.php";
   }
 }
 </script>

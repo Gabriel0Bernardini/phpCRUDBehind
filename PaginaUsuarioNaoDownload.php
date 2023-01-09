@@ -12,7 +12,7 @@
         <div class="div1">
             <p class="p1">Usuario não conectado!</p>
             <p class="p2">Para fazer o download do jogo por favor<br><a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para logar</a></p>
-            <p class="p2">Se é sua primeira vez,<br><a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para se cadastrar</a> </p>
+            <p class="p2">Se é sua primeira vez,<br><a href="cadastroUsuarioComum.php" style="color: rgb(4, 116, 4);;">clique aqui para se cadastrar</a> </p>
         </div>
     </div>
 </body>

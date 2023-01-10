@@ -18,8 +18,8 @@
     require_once("Header.php");
 ?>
 
-    <div class = "container1" >
-        <div class="div1" >
+    <div class = "container1">
+        <div class="div1">
             <p class="p1" >Login</p>
             <form class="form1" id="formLogin" action="loginCodigoForm.php" method="post">
                 <label for="txtEmail">E-mail:</label><br>

@@ -19,17 +19,19 @@
     <link href="indexstyle.css" rel="Stylesheet">
 </head>
 <body>
+  <div>
   <?php
       include("header.php");
   ?>
-  <br>    
+  </div>
+  <br><br><br><br><br>    
+  <div class="container-fluid">
   <div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 9%;
       border-radius: 50px; 
       border-style: solid;
       border-width: 5px; 
       border-color: rgb(1, 19, 5);
       box-shadow: 5px 10px 30px 10px rgb(0, 17, 4), 5px 10px 30px 10px rgb(2, 63, 16);
-      display:inline-block;
       display: flex;
       justify-content: center;">
 
@@ -66,7 +68,7 @@
     </button>
   </div>
 
-  <div class="container1">
+  
     <div class="div1">
       <p class="p1">
         Behind the Bushes é um TopDown Shooter onde o personagem principal, Jerson, se encontra <br>perdido em uma floresta densa, rodeado de mata.<br>

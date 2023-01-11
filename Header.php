@@ -17,6 +17,7 @@
 <?php } ?>
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>
+    <li class="headerLI"><a href="ListaPontuacoes.php" class="link aNavLink">HighScores</a></li>
     <?php if(!(isset($_SESSION["email"]))){ ?>
       <li class="headerLI"><a class="link aNavLink" href="cadastroUsuarioComum.php">Cadastro</a></li>
       <?php } else{

@@ -1,0 +1,54 @@
+body{
+    background-image: url(Images/Bush1.png);
+    background-repeat: repeat;
+    text-align: center;
+}
+
+.container1{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.div1{
+    background-image: url(Images/woodenTexture.jpg);
+    width: 85%;
+    height: 50%;
+    background-repeat: no-repeat;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(51, 35, 26);
+    border-radius: 40px;
+    box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
+
+    text-align: center;
+}
+
+.p1{
+    padding-top: -10px;
+    padding-bottom: 10px;
+
+    font-family: 'Upheaval';
+    font-size: 50px;
+    color: rgb(43, 20, 14);
+
+    text-decoration: underline;
+
+    margin-top: 1.9%;
+}
+
+table{
+    border-collapse:collapse ;
+    text-align: center;
+}
+
+
+
+@font-face{
+    font-family: 'Upheaval';
+    src: url('Fonts/upheavtt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

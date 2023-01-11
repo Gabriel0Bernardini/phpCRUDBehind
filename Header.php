@@ -18,6 +18,8 @@
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>
     <li class="headerLI"><a href="ListaPontuacoes.php" class="link aNavLink">HighScores</a></li>
+    <li class="headerLI"><a href="ListaPontuacoes.php" class="link aNavLink">PatchNotes</a></li>
+
     <?php if(!(isset($_SESSION["email"]))){ ?>
       <li class="headerLI"><a class="link aNavLink" href="cadastroUsuarioComum.php">Cadastro</a></li>
       <?php } else{
@@ -44,6 +46,7 @@
     <?php 
     }
     ?>
+    
     <li class="headerLI"><a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2x icones aNavLink"></i></a></li>
     <li class="headerLI"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x icones aNavLink"></i></a></li>
     <li class="headerLI"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2x icones aNavLink"></i></a></li>

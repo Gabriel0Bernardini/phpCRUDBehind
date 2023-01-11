@@ -22,6 +22,7 @@
         $_SESSION["email"] = $email;
         $_SESSION["nick"] = $nick;
         $_SESSION["tipo"] = "COMUM";
+        echo "<script>alert('Usuário inserido com sucesso!');</script>";
         echo "<script>window.location = 'index.php';</script>";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;

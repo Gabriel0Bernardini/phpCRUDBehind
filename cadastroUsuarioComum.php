@@ -26,7 +26,7 @@
     <div class = "container1">
         <div class="div1">
             <p class="p1" >Cadastro</p>
-            <form class="form1" action="insertUsuarioComum.php" method="post">
+            <form class="form1" action="insertUsuarioComum.php" method="post" id="insertUsuarioComum">
                 <label for="txtNome" >Primeiro nome:</label><br>
                 <input type="text" id="txtNome" name="txtNome" class="input1"  placeholder ="Digite o nome" required><br>
                 
@@ -45,7 +45,7 @@
                 <label for="ConfirmSenha"> Confirme a senha:</label><br>
                 <input type="password" id="ConfirmSenha" name="ConfirmSenha" class="input1"  placeholder ="Confirme a senha" required><br>
 
-                <input type="submit" value="Cadastrar" nome="btnCadastrar" class="BotaoCadastrar">
+                <input type="button" value="Cadastrar" nome="btnCadastrar" class="BotaoCadastrar" onclick="checaSenhas()" >
                 <input type="reset" value="Cancelar" nome="btnCancelar" class="BotaoCadastrar">
             </form>
 
@@ -53,4 +53,21 @@
         </div>
     </div>
 </body>
+<script>
+    function checaSenhas(){
+    let senha = document.getElementById("txtSenha");
+    let confirmSenha = document.getElementById("ConfirmSenha");
+
+    if(senha.value != confirmSenha.value){
+        alert('As senhas não coincidem!');
+        return false;
+    }
+
+    
+    document.getElementById('insertUsuarioComum').submit();
+    
+ }
+
+
+</script>
 </html>

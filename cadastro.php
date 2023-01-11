@@ -50,12 +50,26 @@
                 <input type="radio"  name="TipoUsuario" value="ADMIN" class="input1" style="font-family:'DogicaBold';">ADMIN
                 <input type="radio" name="TipoUsuario" value="COMUM" class="input1" style="font-family:'DogicaBold';">COMUM
 
-                <input type="submit" value="Cadastrar" nome="btnCadastrar" class="BotaoCadastrar">
-                <input type="reset" value="Cancelar" nome="btnCancelar" class="BotaoCadastrar">
+                <input type="button" value="Cadastrar" name="btnCadastrar" class="BotaoCadastrar" onclick="checaSenhas()">
+                <input type="reset" value="Cancelar" name="btnCancelar" class="BotaoCadastrar">
             </form>
 
             <p class="p2">Se você já tem um cadastro <a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para fazer login</a></p>
         </div>
     </div>
 </body>
+<script>
+  function checaSenhas(){
+    let senha = document.getElementById("txtSenha");
+    let confirmSenha = document.getElementById("ConfirmSenha");
+
+    if(senha.value != confirmSenha.value){
+        alert('As senhas não coincidem!');
+        return false;
+    }
+
+    
+    document.getElementById('insert').submit();
+}
+</script>
 </html>

@@ -69,7 +69,7 @@
   </div>
 
   
-    <div class="div1">
+    <div class="div1" style="margin-right: 2%;">
       <p class="p1">
         Behind the Bushes é um TopDown Shooter onde o personagem principal, Jerson, se encontra <br>perdido em uma floresta densa, rodeado de mata.<br>
         De repente Jerson escuta barulhos vindo dos arbustos ao seu redor. <br> Ele fica com medo, mas por sorte ele não anda despreparado. Jerson, por algum motivo,<br> anda com sua fiel XM95-2000-Hypetron-anti-radio-materia-atomizadora-4D,

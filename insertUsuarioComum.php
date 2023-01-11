@@ -18,7 +18,6 @@
     VALUES ('" . $nome . "', '" . $sobrenome . "','" . $nick . "','" .$email ."','" . $senha . "','COMUM')";
     
     if ($conn->query($sql) === TRUE) {
-        //echo "<script>alert('Usuário cadastrado com sucesso!');</script>";
         $_SESSION["email"] = $email;
         $_SESSION["nick"] = $nick;
         $_SESSION["tipo"] = "COMUM";

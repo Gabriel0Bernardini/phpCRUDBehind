@@ -18,8 +18,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CadastroStyle.css">
 </head>
-<body>   
+<body> 
+
 <?php
+if (isset($_SESSION["email"])){ 
+    if($_SESSION["tipo"]==="COMUM"){
+    require_once("PaginaUsuarioNaoPermitido.php");  
+    }
+}else{
     require_once("Header.php");
 ?>
 
@@ -52,6 +58,9 @@
             <p class="p2">Se você já tem um cadastro <a href="login.php" style="color: rgb(4, 116, 4);;">clique aqui para fazer login</a></p>
         </div>
     </div>
+    <?php
+        }
+    ?>
 </body>
 <script>
     function checaSenhas(){

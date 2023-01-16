@@ -27,6 +27,7 @@
   <br><br><br><br><br>    
   <div class="container-fluid">
   <div id="carouselExampleFade" class=" carousel slide carousel-fade " data-bs-ride="carousel" style="width: 46%;margin-left:2%;margin-top: 9%;
+      z-index: 0;
       border-radius: 50px; 
       border-style: solid;
       border-width: 5px; 

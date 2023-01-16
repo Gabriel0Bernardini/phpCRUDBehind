@@ -4,56 +4,6 @@ body{
     background-repeat: repeat;
 }
 
-.backgroundCarrossel{ 
-    
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: rgba(2, 27, 2, 0.5);
-}
-.child{
-    margin: 0 auto;
-}
-
-
-.botaoDownload{
-    font-family:'Daydream';
-    font-size: 25px;
-    color: rgb(8, 6, 4);
-
-    position: fixed;
-    z-index: 999;
-
-    height: 80px;
-    width: 35%;
-
-    background-color: rgb(56, 29, 9);
-    margin-top: 1%;
-    margin-left: 1%;
-
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(26, 9, 0);
-    border-radius: 18px;
-    box-shadow: 5px 5px 75px 5px rgba(40, 66, 45, 0.644), 5px 5px 75px 5px rgba(34, 26, 18, 0.651);
-
-    text-align: center;
-
-    color: white    ; 
-    font-size: 45px;
-    justify-self: center;
-    transition: color 1s
-    ease-out 50ms
-}
-
-
-.botaoDownload:hover{
-    color: rgb(214, 214, 19);
-    
-    
-}
-
 .container1{
     display: flex;
     justify-content: center;
@@ -66,14 +16,11 @@ body{
 
 .div1{
     background-image: url(Images/woodenTexture.jpg);
-    width: 55%;
+    width: 40%;
     height: 35%;
     background-repeat: no-repeat;
-    display: block;
-    margin-top: 1%;
-    margin-right: 8%;
+    margin-top: -30%;
     float: right;
-    z-index: 0;
 
     border-style: solid;
     border-width: 5px;
@@ -90,11 +37,50 @@ body{
     font-size: 27px;
     color: rgb(43, 25, 14);
 
-    margin-top: 5%;
+    margin-top: 7.5%;
     margin-left: 2%;
     margin-right: 2%;
 
 }
+
+
+.botaoDownload{
+    font-family:'Daydream';
+    font-size: 45px;
+    color: rgb(8, 6, 4);
+
+    height: 100px;
+    width: 880px;
+
+    background-color: rgb(4, 61, 4);
+    margin-top: 5%;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(51, 35, 26);
+    border-radius: 18px;
+    box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
+
+    text-align: center;
+
+    margin-right: 6.2%;
+
+    color: black; 
+    font-size: 45px;
+    justify-self: center;
+    transition: color 1s
+    ease-out 50ms
+}
+
+
+.botaoDownload:hover{
+    color: rgb(214, 214, 19);
+    
+    
+}
+
+
+
 
 /*Import de fontes */
 @font-face {

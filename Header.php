@@ -8,9 +8,10 @@
 
 <link href="headerStyle.css" rel="Stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-
-<header class="cabecalho"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
+<script>
+<link href="HeaderJs.js" >
+</script>
+<header class="cabecalho" id="myHeader"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
 <?php 
   if(isset($_SESSION["email"]) ){?>
   <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!<br><br> Tipo de Usuario: <?php echo $_SESSION["tipo"]?></p>
@@ -23,7 +24,7 @@
     <?php if(!(isset($_SESSION["email"]))){ ?>
       <li class="headerLI"><a class="link aNavLink" href="cadastroUsuarioComum.php">Cadastro</a></li>
       <?php } else{
-        if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
+         if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
           ?> <li class="headerLI"><a class="link aNavLink" href="cadastro.php">Cadastro</a></li><?php
         }
       }

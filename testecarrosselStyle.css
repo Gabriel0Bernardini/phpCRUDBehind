@@ -54,7 +54,47 @@ body{
     
 }
 
+.container1{
+    display: flex;
+    justify-content: center;
+    margin-top: -13.5%;
+    margin-right: 2%;
 
+}
+
+
+
+.div1{
+    background-image: url(Images/woodenTexture.jpg);
+    width: 55%;
+    height: 35%;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 1%;
+    margin-right: 8%;
+    float: right;
+    z-index: 0;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(51, 35, 26);
+    border-radius: 50px;
+    box-shadow: 5px 5px 75px 5px rgba(24, 7, 7, 0.644), 5px 5px 75px 5px rgba(17, 10, 1, 0.651);
+
+    text-align: center;
+
+}
+
+.p1{
+    font-family: 'Upheaval';
+    font-size: 27px;
+    color: rgb(43, 25, 14);
+
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
 
 /*Import de fontes */
 @font-face {

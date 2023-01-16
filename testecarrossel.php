@@ -54,5 +54,16 @@
       onclick="location.href='./DownloadFiles/BehindTheBushes_20221206_v11.zip'"
     <?php }else{?> onclick="location.href='PaginaUsuarioNaoDownload.php'" <?php }?> 
     >DOWNLOAD</button> 
+
+
+    <div class="div1" style="margin-right: 2%;">
+      <p class="p1">
+        Behind the Bushes é um TopDown Shooter onde o personagem principal, Jerson, se encontra <br>perdido em uma floresta densa, rodeado de mata.<br>
+        De repente Jerson escuta barulhos vindo dos arbustos ao seu redor. <br> Ele fica com medo, mas por sorte ele não anda despreparado. Jerson, por algum motivo,<br> anda com sua fiel XM95-2000-Hypetron-anti-radio-materia-atomizadora-4D,
+        ou popularmente conhecida como: Arma-Laser. <br>
+        O seu objetivo é controlar Jerson e se defender dos inimigos que os arbustos escondem, mas sua derrota é inevitável... A questão é: quanto tempo você consegue sobreviver?
+      </p>
+    </div>
+  </div>
 </body>
 </html>

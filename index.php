@@ -58,7 +58,7 @@ session_start();
 
 <button type="button" class="botaoDownload" <?php  
     if(isset($_SESSION["email"]) ){?>
-      onclick="location.href='./DownloadFiles/BehindTheBushes_20221206_v11.zip'"
+      onclick="location.href='./DownloadFiles/BTB Installer.exe'"
     <?php }else{?> onclick="location.href='PaginaUsuarioNaoDownload.php'" <?php }?> 
     >DOWNLOAD</button> 
 

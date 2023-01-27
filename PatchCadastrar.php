@@ -22,8 +22,34 @@ session_start();
 </head>
 <body>
 <?php
-    include("Header.php");
+if (isset($_SESSION["email"])){ 
+    if($_SESSION["tipo"]==="COMUM"){
+    require_once("PaginaUsuarioNaoPermitido.php");  
+    }}  
 ?>
+<?php
+ include('Header.php')
+?>
+<br><br><br>
+
+
+<form class="form1">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Nome do jogo</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Behind The Bushes ">
+    </div>
+    <br>    
+    <div class="form-group">
+        <label for="exampleFormControlInput2">Versão do Jogo(Após esse update)</label>
+        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="1.6"> 
+    </div>
+    <br>
+    <div class="form-group">
+        <label for>
+    </div>
+</form>
+
+
 
 </body>
 </html>

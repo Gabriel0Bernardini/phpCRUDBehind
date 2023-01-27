@@ -1,7 +1,6 @@
 <?php
   require_once("conexao.php");
   session_start();
-
   
 ?>
 
@@ -17,7 +16,6 @@
   <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!<br><br> Tipo de Usuario: <?php echo $_SESSION["tipo"]?></p>
 <?php } ?>
   <ul class="headerUL" style="padding-top: 1%;">
-    
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>
     <li class="headerLI"><a href="ListaPontuacoes.php" class="link aNavLink">HighScores</a></li>
     <li class="headerLI"><a href="patchNotes.php" class="link aNavLink">PatchNotes</a></li>

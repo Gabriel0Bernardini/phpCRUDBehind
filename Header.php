@@ -7,9 +7,6 @@
 
 <link href="headerStyle.css" rel="Stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<script>
-<link href="HeaderJs.js" >
-</script>
 <header class="cabecalho" id="myHeader"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
 <?php 
   if(isset($_SESSION["email"]) ){?>

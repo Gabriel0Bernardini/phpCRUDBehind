@@ -33,7 +33,7 @@ if (isset($_SESSION["email"])){
 <br><br><br>
 
 
-<form class="form1">
+<form class="form1" action="insert.php" id = "insertPatchNotes.php" method="post">
     <div class="form-group">
         <label for="exampleFormControlInput1">Nome do jogo</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Behind The Bushes ">
@@ -45,8 +45,22 @@ if (isset($_SESSION["email"])){
     </div>
     <br>
     <div class="form-group">
-        <label for>
+        <label for="exampleFormControlTextarea1">Descrição do patch</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" 
+        placeholder="-Atualição da arma 
+-O mapa foi aumentado
+-Os bugs foram concertados"
+        rows="4"></textarea>
     </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlInput3">Data do update</label>
+        <input type="date" class="form-control" id="exampleFormControlInput3" placeholder="dd/mm/yyyy">
+    </div>
+    <br>
+    <input type="button" value="Cadastrar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" >
+    <input type="reset" value="Cancelar" name="btnCancelar" class="btn btn-danger" style="width: 10%;">
+            
 </form>
 
 

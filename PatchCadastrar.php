@@ -33,32 +33,32 @@ if (isset($_SESSION["email"])){
 <br><br><br>
 
 
-<form class="form1" action="insert.php" id = "insertPatchNotes.php" method="post">
+<form class="form1" action="insertPatchNotes.php" id = "insertPatchNotes" method="post">
     <div class="form-group">
-        <label for="exampleFormControlInput1">Nome do jogo</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Behind The Bushes ">
+        <label for="txtNome">Nome do jogo</label>
+        <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="Behind The Bushes ">
     </div>
     <br>    
     <div class="form-group">
-        <label for="exampleFormControlInput2">Versão do Jogo(Após esse update)</label>
-        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="1.6"> 
+        <label for="txtVersao">Versão do Jogo(Após esse update)</label>
+        <input type="number" class="form-control" id="txtVersao" name="txtVersao" placeholder="1.6"> 
     </div>
     <br>
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">Descrição do patch</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" 
+        <label for="txtDesc">Descrição do patch</label>
+        <textarea class="form-control" id="txtDesc" name="txtDesc" 
         placeholder="-Atualição da arma 
 -O mapa foi aumentado
 -Os bugs foram concertados"
-        rows="4"></textarea>
+        rows="4" ></textarea>
     </div>
     <br>
     <div class="form-group">
-        <label for="exampleFormControlInput3">Data do update</label>
-        <input type="date" class="form-control" id="exampleFormControlInput3" placeholder="dd/mm/yyyy">
+        <label for="txtData">Data do update</label>
+        <input type="date" class="form-control" id="txtData" name="txtData" placeholder="dd/mm/yyyy">
     </div>
     <br>
-    <input type="button" value="Cadastrar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" >
+    <input type="submit" value="Cadastrar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" >
     <input type="reset" value="Cancelar" name="btnCancelar" class="btn btn-danger" style="width: 10%;">
             
 </form>

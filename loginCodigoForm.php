@@ -16,6 +16,7 @@
     if($resultado->num_rows > 0){
         $dados_usuario = $resultado->fetch_assoc();
 
+        $_SESSION["id"] = $dados_usuario["Id"];
         $_SESSION["email"] = $dados_usuario["EmailUsuario"];
         $_SESSION["nick"] = $dados_usuario["NickUsuario"];
         $_SESSION["tipo"] = $dados_usuario["TipoUsuario"];

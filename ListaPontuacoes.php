@@ -20,7 +20,13 @@
    <?php
         require_once("Header.php");
    ?>
-   <br>
+   
+    <form class="form1" style="margin-top:12%; padding-bottom=10%;" action="insertHighScores.php" action="get">
+    <div class="form-group">
+        <input type="int" maxlength="6" class="form-control" style="width=50%" id="txtHighScore" name="txtHighScore" placeholder="Insira aqui sua pontuação">
+    </div>
+    </form>
+
     <div class = "container1">
         <div class = "div1">
             <p class="p1">Lista de HighScores</p>

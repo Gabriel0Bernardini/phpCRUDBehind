@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Jan-2023 às 16:23
+-- Tempo de geração: 30-Jan-2023 às 11:48
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -29,11 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbpatch` (
   `NomeJogo` varchar(9999) NOT NULL,
-  `VersaoPatch` int(255) NOT NULL,
+  `VersaoPatch` float NOT NULL,
   `DescricaoPatch` longtext NOT NULL,
   `DataPatch` varchar(10) NOT NULL,
   `Id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tbpatch`
+--
+
+INSERT INTO `tbpatch` (`NomeJogo`, `VersaoPatch`, `DescricaoPatch`, `DataPatch`, `Id`) VALUES
+('', 1.23, '', '', 2);
 
 -- --------------------------------------------------------
 
@@ -85,7 +92,7 @@ ALTER TABLE `tbusuario`
 -- AUTO_INCREMENT de tabela `tbpatch`
 --
 ALTER TABLE `tbpatch`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `tbusuario`

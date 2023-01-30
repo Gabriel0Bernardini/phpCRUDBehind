@@ -41,7 +41,7 @@ if (isset($_SESSION["email"])){
     <br>    
     <div class="form-group">
         <label for="txtVersao">Versão do Jogo(Após esse update)</label>
-        <input type="number" class="form-control" id="txtVersao" name="txtVersao" placeholder="1.6"> 
+        <input type="number" step="0.01" class="form-control" id="txtVersao" name="txtVersao" placeholder="1.6"> 
     </div>
     <br>
     <div class="form-group">

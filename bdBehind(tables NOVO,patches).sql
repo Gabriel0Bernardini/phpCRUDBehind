@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbpatch` (
-  `Nome` varchar(9999) NOT NULL,
-  `Versao` int(255) NOT NULL,
-  `Descricao` longtext NOT NULL,
-  `Data` varchar(10) NOT NULL,
+  `NomeJogo` varchar(9999) NOT NULL,
+  `VersaoPatch` int(255) NOT NULL,
+  `DescricaoPatch` longtext NOT NULL,
+  `DataPatch` varchar(10) NOT NULL,
   `Id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

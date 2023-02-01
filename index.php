@@ -27,7 +27,7 @@ session_start();
 <div id="carouselExampleIndicators" class="carousel slide carousel-fade child" style="
     z-index:0;
     width: 50%;
-    margin-top: 9%; 
+    margin-top: 6.4%; 
     border-style: none;
     display: block;
     justify-content: center;">

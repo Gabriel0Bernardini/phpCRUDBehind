@@ -24,10 +24,34 @@ session_start();
 ?>
 <br><br><br><br><br>
 <?php
-if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
-    ?> <div class="div1">
-    <a href="PatchCadastrar.php" style="text-decoration:none"><p class="p1">Cadastrar Patch</p></a><?php
-}?>
-</div>
+    if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
+        ?>
+        <div class="div1">
+        <a href="PatchCadastrar.php" style="text-decoration:none"><p class="p1">Cadastrar Patch</p></a>
+    <?php
+        }
+    ?>
+        </div>
+
+<br><br>
+
+<?php 
+    $sql = "SELECT * FROM tbpatch order by Id";
+
+    $dadosPatch = $conn->query($sql);
+    $qntdPatches = 0;
+    
+    while($dadosPatch->fetch_assoc()){
+        $qntdPatches++;
+    }
+
+    $i = 1;
+    $idTeste = 1;
+
+    while($row = $dadosPatch->fetch_assoc()){
+        echo $row['NomeJogo'];
+    }
+?>
+
 </body>
 </html>

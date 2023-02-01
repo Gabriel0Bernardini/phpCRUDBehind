@@ -10,7 +10,9 @@
 <header class="cabecalho" id="myHeader"> <img src="Images/BehindTheBushesTitle2.png" class="logoimg">
 <?php 
   if(isset($_SESSION["email"]) ){?>
-  <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!<br><br> Tipo de Usuario: <?php echo $_SESSION["tipo"]?></p>
+  <p class="MensagemUsuario">Bem vindo (a), <?php echo $_SESSION["nick"]?>!<br><br>
+  <?php if(($_SESSION["tipo"]==="ADMIN")){?>Tipo de Usuario: <?php echo $_SESSION["tipo"]?></p>
+  <?php }?>
 <?php } ?>
   <ul class="headerUL" style="padding-top: 1%;">
     <li class="headerLI"><a href="index.php" class="link aNavLink">Home</a></li>

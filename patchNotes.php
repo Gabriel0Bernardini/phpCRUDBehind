@@ -50,7 +50,7 @@ session_start();
     <div class="div3">
     <dl class="dl1">
         <dt class="dt1" > <?php echo $exibir["NomeJogo"]?> versão <?php echo $exibir["VersaoPatch"]?><p class="pData"><?php echo $exibir["DataPatch"]?></p></dt>
-        <dd class="dd1"><?php echo $exibir["DescricaoPatch"]?></dd>
+        <dd class="dd1"><pre><?php echo $exibir["DescricaoPatch"]?></pre></dd>
         <?php
             if((isset($_SESSION["email"])) && ($_SESSION["tipo"]==="ADMIN")){
         ?>   
@@ -60,7 +60,10 @@ session_start();
                     <i class="fa-solid fa-trash-can" style="color:white"></i> Deletar Patch
                 </button>
             </a>
-            <a href="#">
+            <a href="#" onclick="confirmarExclusao(
+                    '<?php echo $exibir['Id'] ?>',
+                    '<?php echo $exibir['NomeJogo'] ?>',
+                    '<?php echo $exibir['VersaoPatch']?>')">
             <button type="button" class="btn btn-primary">
                 <i class="fa-solid fa-pen-to-square" style="color: white;"></i> Editar Patch
             </button>
@@ -81,4 +84,11 @@ session_start();
         ?>
 
 </body>
+<script>
+    function confirmarExclusao(id, nome, versao){
+        if(window.confirm("Deseja realmente excluir o Patch:\n"+id+" -  "+nome+""+ versao)){
+            window.location = "excluirPatch.php?Id="+id;
+        }   
+    }
+</script>
 </html>

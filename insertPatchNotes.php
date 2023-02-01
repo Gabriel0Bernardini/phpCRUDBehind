@@ -12,9 +12,10 @@
     $versao = $_POST["txtVersao"];
     $desc = $_POST["txtDesc"];
     $data = $_POST["txtData"];
+    $novaData=date("d/m/Y", strtotime($data));
 
     $sql = "INSERT INTO tbpatch (NomeJogo, VersaoPatch, DescricaoPatch, DataPatch)
-    VALUES ('" . $nome . "', '" . $versao . "','" . $desc. "','" .$data . "')";
+    VALUES ('" . $nome . "', '" . $versao . "','" . $desc. "','" .$novaData . "')";
     
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Patch note inserido com sucesso!');</script>";

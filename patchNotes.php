@@ -63,7 +63,7 @@ session_start();
                     <i class="fa-solid fa-trash-can" style="color:white"></i> Deletar Patch
                 </button>
             </a>
-            <a href="#" >
+            <a href="editarPatch.php"  >
             <button type="button" class="btn btn-primary">
                 <i class="fa-solid fa-pen-to-square" style="color: white;"></i> Editar Patch
             </button>

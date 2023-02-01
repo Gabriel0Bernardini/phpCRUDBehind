@@ -30,6 +30,10 @@ body{
     color: rgb(36, 34, 33);
 }
 
+.dd2{
+    margin-left: 40%;
+}
+
 .div1{
     background-image: url(Images/woodenTexture.jpg);
     width: 20%;

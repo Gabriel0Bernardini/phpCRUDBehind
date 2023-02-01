@@ -32,26 +32,37 @@ session_start();
         }
     ?>
         </div>
+<br><br><br><br><br>
 
-<br><br>
+<?php
 
-<?php 
-    $sql = "SELECT * FROM tbpatch order by Id";
+    $sql = "SELECT * FROM tbpatch order by Id DESC";
 
-    $dadosPatch = $conn->query($sql);
-    $qntdPatches = 0;
+    $dadosPatch= $conn->query($sql);
+
+    if($dadosPatch->num_rows > 0){
+        ?>
+    <div class="container1">
+        <div class="div2">
+            <h1 class="p2">Patch Notes</h1>
+    <?php
+    while($exibir = $dadosPatch->fetch_assoc()){
+    ?>
+    <div class="div3">
+    <dl class="dl1">
+        <dt class="dt1" > <?php echo $exibir["NomeJogo"]?> versão <?php echo $exibir["VersaoPatch"]?><p class="pData"><?php echo $exibir["DataPatch"]?></p></dt>
+        <dd class="dd1"><?php echo $exibir["DescricaoPatch"]?></dd>
+    </dl>
+    </div>
+    <?php
+            }
+    ?>
+        </div>
+    </div>
+    <?php
     
-    while($dadosPatch->fetch_assoc()){
-        $qntdPatches++;
-    }
-
-    $i = 1;
-    $idTeste = 1;
-
-    while($row = $dadosPatch->fetch_assoc()){
-        echo $row['NomeJogo'];
-    }
-?>
+        }
+        ?>
 
 </body>
 </html>

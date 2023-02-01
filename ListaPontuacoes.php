@@ -20,15 +20,20 @@
    <?php
         require_once("Header.php");
    ?>
+   
    <?php
     if(isset($_SESSION["email"])){
     ?>
     <form class="form1" style="margin-top:12%; text-align:center;" action="insertHighScores.php" action="get">
     <div class="form-group">
-        <input type="int" maxlength="6" class="form-control" style="width:30%;margin-left:auto;margin-right:auto;background-color:rgb(20, 20,20);color:white;
+        <input type="int" maxlength="6" class="form-control" style="width:30%;margin-left:auto;margin-right:auto;background-color:rgb(20, 20,20     );color:white;
         " id="txtHighScore" name="txtHighScore" placeholder="Insira aqui sua pontuação">
     </div>
     </form>
+    <?php
+    }else{
+    ?>
+    <div style="margin-top: 12%;"></div>
     <?php
     }
     ?>

@@ -63,11 +63,16 @@ session_start();
                     <i class="fa-solid fa-trash-can" style="color:white"></i> Deletar Patch
                 </button>
             </a>
-            <a href="editarPatch.php"  >
-            <button type="button" class="btn btn-primary">
-                <i class="fa-solid fa-pen-to-square" style="color: white;"></i> Editar Patch
-            </button>
-            </a>
+            <form action="editarPatch.php?Id=<?php echo $exibir['Id'] ?>" method="post" style="diplay:inline">
+                <input type="submit" id="hidden" name="hidden" value="Editar">
+                <button type="button" class="btn btn-primary">
+                    <i class="fa-solid fa-pen-to-square" style="color: white;"></i> Editar Patch
+                </button>
+                
+            </form>
+            
+            
+            
         <?php
         }
         ?>

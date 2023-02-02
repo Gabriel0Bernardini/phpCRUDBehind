@@ -5,7 +5,6 @@ session_start();
 ?>
 
 <?php
-    include_once"conexao.php";
 
     if(isset($_POST["txtNome"])){
         $nome = $_POST["txtNome"];
@@ -17,7 +16,7 @@ session_start();
                 SET NomeJogo = '".$nome."',
                 VersaoPatch= '".$versao."',
                 DescricaoPatch = '".$desc."',
-                DataPatch = '".$data."',
+                DataPatch = '".$data."'
                 WHERE Id =" .$_GET["Id"];
 
         if($conn->query($sql)==TRUE){
@@ -67,8 +66,12 @@ if (isset($_SESSION["email"])){
             $Id = $_GET["Id"];
             $sql = "SELECT * FROM tbpatch WHERE Id = $Id";
             $consulta = $conn->query($sql);
-            $patch = $consulta ->fetch_assoc();            
+            $patch = $consulta ->fetch_assoc();          
+            $data = $patch["DataPatch"];  
+            list($dia, $mes, $ano) = explode("/", $data);
+                $dataNova = $ano."-".$mes."-".$dia;
         }
+    
     ?>
 
 
@@ -88,16 +91,16 @@ if (isset($_SESSION["email"])){
     <br>
     <div class="form-group">
         <label for="txtDesc">Descrição do patch</label>
-        <textarea class="form-control" id="txtDesc" name="txtDesc" value="<?php echo $patch["DescricaoPatch"]?>"
-        placeholder="-Atualição da arma 
+        <textarea class="form-control" id="txtDesc" name="txtDesc" placeholder="-Atualição da arma 
 -O mapa foi aumentado
 -Os bugs foram concertados"
-        rows="4" ></textarea>
+        rows="4"
+        value=<PRE><?php echo $patch["DescricaoPatch"]?></textarea>
     </div>
     <br>
     <div class="form-group">
         <label for="txtData">Data do update</label>
-        <input type="date" class="form-control" value="<?php echo $patch["DataPatch"]?>" id="txtData" name="txtData" placeholder="dd/mm/yyyy">
+        <input type="date" class="form-control" value="<?php echo $dataNova?>" id="txtData" name="txtData" placeholder="dd/mm/yyyy">
     </div>
     <br>
     <input type="submit" value="Editar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" >

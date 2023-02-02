@@ -63,14 +63,12 @@ session_start();
                     <i class="fa-solid fa-trash-can" style="color:white"></i> Deletar Patch
                 </button>
             </a>
-            <form action="editarPatch.php?Id=<?php echo $exibir['Id'] ?>" method="post" style="diplay:inline">
-                <input type="submit" id="hidden" name="hidden" value="Editar">
+
+            <a href="#" onclick="editarPatch('<?php echo $exibir['Id']?>')">
                 <button type="button" class="btn btn-primary">
                     <i class="fa-solid fa-pen-to-square" style="color: white;"></i> Editar Patch
                 </button>
-                
-            </form>
-            
+            </a>            
             
             
         <?php
@@ -90,6 +88,10 @@ session_start();
 
 </body>
 <script>
+    function editarPatch(id){
+        window.location = "editarPatch.php?Id="+id;
+    }
+
     function confirmarExclusao(id, nome, versao){
         if(window.confirm("Deseja realmente excluir o Patch:\n"+id+" - "+nome+" v"+ versao)){
             window.location = "excluirPatch.php?Id="+id;

@@ -11,12 +11,13 @@ session_start();
         $versao = $_POST["txtVersao"];
         $desc= $_POST["txtDesc"];
         $data = $_POST["txtData"];
+        $novaData=date("d/m/Y", strtotime($data));
 
         $sql = "UPDATE tbpatch
                 SET NomeJogo = '".$nome."',
                 VersaoPatch= '".$versao."',
                 DescricaoPatch = '".$desc."',
-                DataPatch = '".$data."'
+                DataPatch = '".$novaData."'
                 WHERE Id =" .$_GET["Id"];
 
         if($conn->query($sql)==TRUE){

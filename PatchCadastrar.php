@@ -23,9 +23,7 @@ session_start();
 <body>
 <?php
 if (isset($_SESSION["email"])){ 
-    if($_SESSION["tipo"]==="COMUM"){
-    require_once("PaginaUsuarioNaoPermitido.php");  
-    }}  
+    if($_SESSION["tipo"]==="ADMIN"){  
 ?>
 <?php
  include('Header.php')
@@ -62,8 +60,15 @@ if (isset($_SESSION["email"])){
     <input type="reset" value="Cancelar" name="btnCancelar" class="btn btn-danger" style="width: 10%;">
             
 </form>
+<?php
+    }else{
+        require_once("PaginaUsuarioNaoPermitido.php");
+    }
 
-
+    }else{
+        require_once("PaginaUsuarioNaoLogado.php");
+    }
+?>
 
 </body>
 </html>

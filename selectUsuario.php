@@ -41,7 +41,6 @@ if(isset($_SESSION["email"]) ){
                 <th>Nome</th>
                 <th>Sobrenome</th>
                 <th>E-mail</th>
-                <th>Senha</th>
                 <th>Tipo de Usuário</th>
                 <th>Highscore</th>
                 <th style="text-align: center;padding-right: 50px;">Editar</th>
@@ -59,7 +58,6 @@ if(isset($_SESSION["email"]) ){
                 <td><?php echo $exibir["NomeUsuario"]?></td>
                 <td><?php echo $exibir["SobrenomeUsuario"]?></td>
                 <td><?php echo $exibir["EmailUsuario"]?></td>
-                <td><?php echo $exibir["SenhaUsuario"]?></td>
                 <td><?php echo $exibir["TipoUsuario"]?></td>
                 <td><?php echo $exibir["HighScore"]?></td>
                 <td style="text-align: center;padding-right: 50px;"><a href="editarUsuario.php?Id=<?php echo $exibir["Id"] ?>"><i class="fa-solid fa-user-pen" style="color: white;"></i></a></td>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Fev-2023 às 01:36
+-- Tempo de geração: 03-Fev-2023 às 03:54
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -40,10 +40,11 @@ CREATE TABLE `tbpatch` (
 --
 
 INSERT INTO `tbpatch` (`NomeJogo`, `VersaoPatch`, `DescricaoPatch`, `DataPatch`, `Id`) VALUES
-('Behind the bushes', '1.2', '- Opção de trocar entre minigun e tiro normal\r\n- Tiro da minigun agora mata todos os inimigos\r\n- Tiro da minigun melhorado:\r\n          de 0.25 para 0.5 de dano\r\n- Buffs no escudo:\r\n          Vida: de 3 para 10 de hp\r\n          Range do escudo aumentada\r\n- Nerfs no escudo: \r\n          Cooldown aumentado:  de 10seg para 30seg', '16/01/2023', 4),
-('Behind the bushes', '0.1', '- Lançamento do jogo\r\n- Apenas uma arma\r\n     A arma a lazer, atira um projetil a cada click. Cada projetil da 1 de dano.\r\n- Apenas um tipo de inimigo\r\n     A moita surge dos cantos do mapa e segue o jogador e tira sua vida se chega muito perto. Tem 1 de vida.', '31/07/2022', 3),
-('Behind the bushes', '0.7', '- Nova arma:\r\n        Shotgun (Mouse 2):\r\n        Uma double barrel(espingarda) como qualquer outra, dois disparos que lançam 5 projeteis cada, \r\n        Depois dos dois disparos você deve esperar um tempo de cooldown para usar a arma novamente.\r\n        Para desbloquear a shotgun você deve coletar 10 flores (dropadas quando se mata a Moita Florida).\r\n\r\n- Novo Gadget:\r\n        Escudo (tecla E):\r\n        Um escudo que surge em volta do personagem que o protege dos hits dos inimigos.\r\n        Este escudo tem uma quantidade de vida e quando a mesma acaba o escudo desaparece.\r\n        Para usar o escudo novamente basta esperar seu tempo de cooldown e apertar a tecla E.\r\n        Para desbloquear o escudo se você deve coletar 10 batatas assadas \r\n        (dropadas quando se mata a Batata utilizando um lança chamas[tecla F])', '19/09/2022', 2),
-('Behind the bushes', '0.8', '- Novo sistema de desbloquear itens (Mercado tecla ESC): \r\n     Agora o jogador pode ESCOLHER qual arma vai comprar, porém, algumas precisam de outras para serem compradas \r\n     (por exemplo: o escudo q precisa de batata assada que só se consegue através do uso do lança chamas).\r\n\r\n- Nova arma:\r\n     Lança Granadas\r\n     Um canhão de mão que gera uma explosao hitkill, \r\n     ou seja onde o projétil acertar todos os inimigos nessa área morrem instantaneamente.\r\n     O Lança granadas conta com 5 munições após sua compra, seu preço é 10 batatas assadas.\r\n     O jogador poderá comprar mais munições no mercado, preço de 15 flores a cada 5 munições.\r\n     A cada tiro o jogador deverá esperar o tempo de cooldown ou reload da arma', '06/12/2022', 1);
+('Behind the bushes', '1.3', '- Opção de trocar entre minigun e tiro normal\r\n- Tiro da minigun agora mata todos os inimigos\r\n- Tiro da minigun melhorado:\r\n          de 0.25 para 0.5 de dano\r\n- Buffs no escudo:\r\n          Vida: de 3 para 10 de hp\r\n          Range do escudo aumentada\r\n- Nerfs no escudo: \r\n          Cooldown aumentado:  de 10seg para 30seg', '16/01/2023', 4),
+('Behind the bushes', '1.0', '- Lançamento do jogo\r\n- Apenas uma arma\r\n     A arma a lazer, atira um projetil a cada click. Cada projetil da 1 de dano.\r\n- Apenas um tipo de inimigo\r\n     A moita surge dos cantos do mapa e segue o jogador e tira sua vida se chega muito perto. Tem 1 de vida.', '31/07/2022', 1),
+('Behind the bushes', '1.1', '- Nova arma:\r\n        Shotgun (Mouse 2):\r\n        Uma double barrel(espingarda) como qualquer outra, dois disparos que lançam 5 projeteis cada, \r\n        Depois dos dois disparos você deve esperar um tempo de cooldown para usar a arma novamente.\r\n        Para desbloquear a shotgun você deve coletar 10 flores (dropadas quando se mata a Moita Florida).\r\n\r\n- Novo Gadget:\r\n        Escudo (tecla E):\r\n        Um escudo que surge em volta do personagem que o protege dos hits dos inimigos.\r\n        Este escudo tem uma quantidade de vida e quando a mesma acaba o escudo desaparece.\r\n        Para usar o escudo novamente basta esperar seu tempo de cooldown e apertar a tecla E.\r\n        Para desbloquear o escudo se você deve coletar 10 batatas assadas \r\n        (dropadas quando se mata a Batata utilizando um lança chamas[tecla F])', '19/09/2022', 2),
+('Behind the bushes', '1.2', '- Novo sistema de desbloquear itens (Mercado tecla ESC): \r\n     Agora o jogador pode ESCOLHER qual arma vai comprar, porém, algumas precisam de outras para serem compradas \r\n     (por exemplo: o escudo q precisa de batata assada que só se consegue através do uso do lança chamas).\r\n\r\n- Nova arma:\r\n     Lança Granadas\r\n     Um canhão de mão que gera uma explosao hitkill, \r\n     ou seja onde o projétil acertar todos os inimigos nessa área morrem instantaneamente.\r\n     O Lança granadas conta com 5 munições após sua compra, seu preço é 10 batatas assadas.\r\n     O jogador poderá comprar mais munições no mercado, preço de 15 flores a cada 5 munições.\r\n     A cada tiro o jogador deverá esperar o tempo de cooldown ou reload da arma', '06/12/2022', 3),
+('Behind the Bushes vBeta', '1.4', '-Adição de sons para o jogo:\r\n     Soundtrack\r\n\r\n     SoundEffects\r\n     Som de armas, passos e dano.\r\n     ', '02/02/2023', 5);
 
 -- --------------------------------------------------------
 
@@ -95,7 +96,7 @@ ALTER TABLE `tbusuario`
 -- AUTO_INCREMENT de tabela `tbpatch`
 --
 ALTER TABLE `tbpatch`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `tbusuario`

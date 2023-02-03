@@ -46,7 +46,7 @@ session_start();
         <p class="p3">Faça o download da versão mais recente do BEHIND THE BUSHES 
             <a href="#" <?php  
                 if(isset($_SESSION["email"]) ){?>
-                    onclick="location.href='./DownloadFiles/BTB Installer.exe'"
+                    onclick="location.href='./DownloadFiles/BTB Installer 1.4 vBeta.exe'"
                 <?php }else{?> 
                     onclick="location.href='PaginaUsuarioNaoDownload.php'" <?php }?> 
                 style="color: rgb(4, 116, 4); ">clicando aqui</a></p>

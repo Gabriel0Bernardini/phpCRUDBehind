@@ -104,8 +104,9 @@ if (isset($_SESSION["email"])){
         <input type="date" class="form-control" value="<?php echo $dataNova?>" id="txtData" name="txtData" placeholder="dd/mm/yyyy">
     </div>
     <br>
-    <input type="submit" value="Editar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" >
-    <input type="reset" value="Cancelar" name="btnCancelar" class="btn btn-danger" style="width: 10%;">
+    <input type="submit" value="Editar" name="btnCadastrar" class="btn btn-success" style="width: 10% ; margin-right:1.5% ; margin-left:1%" ><a href="#" onclick="editarPatch('<?php echo $exibir['Id']?>')">
+    <button type="button" onclick="location.href='patchNotes.php'" class="btn btn-danger" style="width: 10% ; margin-right:1.5% ; margin-left:1%">Cancelar</button>
+  
             
 </form>
 
